@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes API Front</title>
+    <link rel="icon" href="https://fav.farm/👓" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUD de Deportes con API</h1>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Deporte</th>
+                        <th>Género</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-deportes">
+                    <!-- Contenido Dinamico -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Formulario -->
+        <div class="form-container">
+            <h2 id="form-title">Agregar Deporte</h2>
+            <form id="deporte-form">
+                <div class="form-group">
+                    <label for="deporte">Deporte</label>
+                    <input type="text" id="deporte" required>
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género</label>
+                    <select id="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
